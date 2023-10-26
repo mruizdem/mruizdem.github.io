@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #6a1b1b;
+    color: #ededed;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent; /* this will make the background of the header transparent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /*find out what this means */
+}
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none; /* used a little bit, just allows for the removal of decoration (hyper-link format or bullets) */
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 1s; /* HUGE DONT FORGET THAT THIS EXISTS */
+}
+.navbar a:hover, .navbar a.active {
+    color: #ffc500;
+}
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content {
+    max-width: 850px; /* had to increase the width to allow for my full name to be displayed since it's so long... */
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffc500;
+    line-height: 1.2;
+}
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #ffc500;
+    border: 2px solid #ffc500;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #6a1b1b;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:hover {
+    color: #ffc500;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #ffc500;
+}
+.btn-box a:nth-child(2):hover {
+    color: #6a1b1b;
+}
+.btn-box a:nth-child(2)::before {
+    background: #ffc500;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #6a1b1b;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffc500;
+    border-radius: 20px;
+    color: #ffc500;
+    text-decoration: none;
+}
