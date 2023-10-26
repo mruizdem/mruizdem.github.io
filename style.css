@@ -8,6 +8,8 @@ body {
     background: #6a1b1b;
     color: #ededed;
 }
+
+/* HEADER OF THE PAGE */
 .header {
     position: fixed;
     top: 0;
@@ -37,6 +39,8 @@ body {
 .navbar a:hover, .navbar a.active {
     color: #ffc500;
 }
+
+/* INDEX - HOME / BODY OF THE PAGE */
 .home {
     height: 100vh;
     display: flex;
@@ -44,7 +48,7 @@ body {
     padding: 0 10%;
 }
 .home-content {
-    max-width: 850px; /* had to increase the width to allow for my full name to be displayed since it's so long... */
+    max-width: 850px; /* min length required for home since my name is too long */
 }
 .home-content h1 {
     font-size: 56px;
@@ -60,6 +64,8 @@ body {
     font-size: 16px;
     margin: 20px 0 40px;
 }
+
+/* HOME BUTTONS STYLING & ANIMATION */
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;
@@ -113,14 +119,14 @@ body {
 .btn-box a:hover::before {
     width: 100%;
 }
-.home-sci {
+.home-soc {
     position: absolute;
     bottom: 40px;
     width: 170px;
     display: flex;
     justify-content: space-between;
 }
-.home-sci a {
+.home-soc a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -131,4 +137,93 @@ body {
     border-radius: 20px;
     color: #ffc500;
     text-decoration: none;
+}
+
+/* CONTACT - Body content */
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.contact-content {
+    margin: 0 auto;
+    /* background: yellowgreen; */
+    width: 1000px;
+}
+.contact-content h1 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffc500;
+    line-height: 1.2;
+}
+.contact-content h3 {
+    text-align: center;
+    margin-top: -50px;
+    font-weight: 400;
+}
+.contact-content p {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.contact-soc {
+    position: absolute;
+    bottom: 29%;
+    left: 47%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left:-100px; /*this is half of width of your div*/
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-soc a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffc500;
+    border-radius: 20px;
+    color: #ffc500;
+    text-decoration: none;
+}
+.contact-form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px; /* Added some padding around the form for spacing */
+}
+.contact-form label {
+    display: inline-block;
+    width: 20%; /* This percentage can be adjusted based on your design needs */
+    text-align: left; /* Aligns the text to the right, making it closer to the input */
+    margin-right: 10px; /* Adds some space between the label and the input */
+}
+.contact-form input {
+    color: #ededed;
+    background-color: #6a1b1b;
+    border: 2px solid #ffc500;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 75%; /* Adjust based on your design needs */
+    margin-bottom: 10px;
+    text-align: left; /* This ensures the input text starts from the left */
+}
+/* This ensures the textarea and the submit button appear full width, adjust if necessary */
+.contact-form textarea, .contact-form input[type="submit"] {
+    width: 100%;
+    display: block; /* This ensures they take up the full width of the form and start on a new line */
+    text-align: center;
+    color: #ededed;
+    background-color: #6a1b1b;
+    border: 2px solid #ffc500;
+}
+/* Centering the placeholder text inside the textarea */
+.contact-form textarea::placeholder {
+    padding: 5px;
+    color: #ededed;
+    text-align: center;
 }
