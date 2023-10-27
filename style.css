@@ -1,229 +1,222 @@
+/* GENERAL STYLIZING */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body {
-    background: #6a1b1b;
-    color: #ededed;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
-/* HEADER OF THE PAGE */
+body {
+	background: #6a1b1b;
+	color: #ededed;
+}
+h1 {
+	font-size: 42px;
+	font-weight: 700;
+}
+h3 {
+	font-size: 28px;
+	font-weight: 700;
+}
+p {
+	font-size: 16px;
+}
+
+/* HEADER */
 .header {
-    position: fixed;
-    top: 0;
+	position: fixed;
+	width: 100%;
     left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent; /* this will make the background of the header transparent */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100; /*find out what this means */
+    top: 0;
+	padding: 20px 10%;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
 }
 .logo {
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
-}
-.navbar a {
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none; /* used a little bit, just allows for the removal of decoration (hyper-link format or bullets) */
-    font-weight: 500;
-    margin-left: 35px;
-    transition: 1s; /* HUGE DONT FORGET THAT THIS EXISTS */
-}
-.navbar a:hover, .navbar a.active {
-    color: #ffc500;
+	font-size: 25px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 600;
 }
 
-/* INDEX - HOME / BODY OF THE PAGE */
+/* NAV BAR */
+.navbar a {
+	font-size: 18px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	transition: 1s;
+}
+.navbar a:hover,
+.navbar a.active {
+	color: #ffc500;
+}
+
+/* INDEX HOME PAGE - MAIN */
 .home {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
 }
 .home-content {
-    max-width: 850px; /* min length required for home since my name is too long */
-}
-.home-content h1 {
-    font-size: 56px;
-    font-weight: 700;
+	max-width: 650px; /* min length required for home since my name is too long */
 }
 .home-content h3 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #ffc500;
-    line-height: 1.2;
+	color: #ffc500;
+	line-height: 1.2;
 }
 .home-content p {
-    font-size: 16px;
-    margin: 20px 0 40px;
+	margin: 20px 0 40px;
 }
 
 /* HOME BUTTONS STYLING & ANIMATION */
 .home-content .btn-box {
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
+	display: flex;
+	justify-content: space-between;
+	width: 345px;
+	height: 50px;
 }
 .btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #ffc500;
-    border: 2px solid #ffc500;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #6a1b1b;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 100%;
+	background: #ffc500;
+	border: 2px solid #ffc500;
+	border-radius: 8px;
+	font-size: 19px;
+	color: #6a1b1b;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 1;
+	overflow: hidden;
+	transition: 0.5s;
 }
 .btn-box a:hover {
-    color: #ffc500;
+	color: #ffc500;
 }
 .btn-box a:nth-child(2) {
-    background: transparent;
-    color: #ffc500;
+	background: transparent;
+	color: #ffc500;
 }
 .btn-box a:nth-child(2):hover {
-    color: #6a1b1b;
+	color: #6a1b1b;
 }
 .btn-box a:nth-child(2)::before {
-    background: #ffc500;
+	background: #ffc500;
 }
-
 .btn-box a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #6a1b1b;
-    z-index: -1;
-    transition: .5s;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #6a1b1b;
+	z-index: -1;
+	transition: 0.5s;
 }
 .btn-box a:hover::before {
-    width: 100%;
-}
-.home-soc {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-.home-soc a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #ffc500;
-    border-radius: 20px;
-    color: #ffc500;
-    text-decoration: none;
+	width: 100%;
 }
 
 /* CONTACT - Body content */
 .contact {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 20px;
+	display: flex;
+	margin-top: 150px;
 }
 .contact-content {
-    margin: 0 auto;
-    /* background: yellowgreen; */
-    width: 1000px;
+	margin: 20px auto;
+	width: 650px;
 }
 .contact-content h1 {
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    color: #ffc500;
-    line-height: 1.2;
+	text-align: center;
+	font-size: 56px;
+	color: #ffc500;
 }
 .contact-content h3 {
-    text-align: center;
-    margin-top: -50px;
-    font-weight: 400;
+	text-align: center;
+	font-weight: 400;
 }
 .contact-content p {
-    text-align: center;
-    font-size: 16px;
-    margin: 20px 0 40px;
-}
-.contact-soc {
-    position: absolute;
-    bottom: 29%;
-    left: 47%;
-    margin-top:-50px; /* this is half the height of your div*/  
-    margin-left:-100px; /*this is half of width of your div*/
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-}
-.contact-soc a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #ffc500;
-    border-radius: 20px;
-    color: #ffc500;
-    text-decoration: none;
+	text-align: center;
+	margin: 10px 0 0px;
 }
 .contact-form {
-    margin: 0 auto;
-    width: 50%;
-    padding: 20px; /* Added some padding around the form for spacing */
+	margin: 0 auto;
+	width: 100%;
 }
 .contact-form label {
-    display: inline-block;
-    width: 20%; /* This percentage can be adjusted based on your design needs */
-    text-align: left; /* Aligns the text to the right, making it closer to the input */
-    margin-right: 10px; /* Adds some space between the label and the input */
+	display: inline-block;
+	width: 20%; /* This percentage can be adjusted based on your design needs */
+	text-align: left; /* Aligns the text to the right, making it closer to the input */
+	margin-right: 10px; /* Adds some space between the label and the input */
 }
 .contact-form input {
-    color: #ededed;
-    background-color: #6a1b1b;
-    border: 2px solid #ffc500;
+	color: #ededed;
+	background-color: #6a1b1b;
+	border: 2px solid #ffc500;
 }
 
 .contact-form input, .contact-form textarea {
-    width: 75%; /* Adjust based on your design needs */
-    margin-bottom: 10px;
-    text-align: left; /* This ensures the input text starts from the left */
+	width: 75%;
+	margin-bottom: 10px;
+	text-align: left; /* This ensures the input text starts from the left */
+    padding-left: 5px;
 }
-/* This ensures the textarea and the submit button appear full width, adjust if necessary */
+/* This ensures the textarea and the submit button appear full width */
 .contact-form textarea, .contact-form input[type="submit"] {
-    width: 100%;
-    display: block; /* This ensures they take up the full width of the form and start on a new line */
-    text-align: center;
-    color: #ededed;
-    background-color: #6a1b1b;
-    border: 2px solid #ffc500;
+	width: 100%;
+	display: block; /* This ensures they take up the full width of the form and start on a new line */
+	color: #ededed;
+	background-color: #6a1b1b;
+	border: 2px solid #ffc500;
 }
-/* Centering the placeholder text inside the textarea */
 .contact-form textarea::placeholder {
-    padding: 5px;
-    color: #ededed;
+	padding: 5px;
+	color: #ededed;
+	text-align: center;
+}
+#submit {
     text-align: center;
+}
+
+/* FOOTER */
+.footer {
+	background: transparent;
+	padding: 20px 0;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* FOOTER SOCIALS */
+.footer-socials {
+	width: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-socials a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #ffc500;
+	border-radius: 20px;
+	color: #ffc500;
+	text-decoration: none;
 }
