@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     }
 
+    // Event listener for added home button
+    document.querySelector('#down-arrow').addEventListener('click', function (event) {
+        event.preventDefault();
+        scrollToSectionWithMargin('about', 0);
+        });
+
     // Event listeners for each navigation link
     document.querySelector('a[href="#home"]').addEventListener('click', function (event) {
     event.preventDefault();
