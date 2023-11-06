@@ -1,3 +1,11 @@
+function projectHover(element) {
+    element.classList.add('active-proj');
+}
+
+function projectHoverOff(element) {
+    element.classList.remove('active-proj');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Function to scroll to a section with margin
     function scrollToSectionWithMargin(targetId, margin) {

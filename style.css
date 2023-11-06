@@ -180,10 +180,18 @@ body {
 
 .project {
     line-height: 2;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
 }
 
 .project img {
     width: 300px;
+}
+
+/* -------------------- PORTFOLIO HOVER -------------------- */
+.active-proj {
+    box-shadow: 5px 5px black;
 }
 
 /* -------------------- CONTACT STYLES -------------------- */
@@ -271,6 +279,10 @@ body {
         padding: 20px;
     }
 
+    .contact {
+        min-height: auto;
+    }
+
     h1 {
         font-size: 36px;
     }
@@ -281,6 +293,10 @@ body {
     }
 
     .nav-bar a {
-        padding-right: 30px;
+        padding-right: 20px;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
