@@ -1,213 +1,249 @@
-/* GENERAL STYLIZING */
+/* -------------------- COLORS -------------------- */
+/* 
+#f5f5dc - beige
+#dcae96 - light red
+#90645a - maroonish
+#442826 - dark
+*/
+
+/* -------------------- CSS RESET -------------------- */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+    flex-wrap: wrap;
 }
 
-body {
-	background: #6a1b1b;
-	color: #ededed;
+/* -------------------- TYPOGRAPHY -------------------- */
+#title {
+    font-size: 60px;
+    color: white;
 }
-h1 {
-	font-size: 42px;
-	font-weight: 700;
+
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
-h3 {
-	font-size: 28px;
-	font-weight: 700;
+
+h4 {
+    font-size: 24px;
 }
+
+h6 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 p {
-	font-size: 16px;
+    text-align: center;
+    font-size: 18px;
+    text-indent: 30px;
 }
 
-/* HEADER */
-.header {
-	position: fixed;
-	width: 100%;
-    left: 0;
-    top: 0;
-	padding: 20px 10%;
-	background: transparent;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 100;
-}
-.logo {
-	font-size: 25px;
-	color: #ededed;
-	text-decoration: none;
-	font-weight: 600;
+span {
+    font-size: 24px;
+    color: white;
 }
 
-/* NAV BAR */
-.navbar a {
-	font-size: 18px;
-	color: #ededed;
-	text-decoration: none;
-	font-weight: 500;
-	margin-left: 35px;
-	transition: 1s;
-}
-.navbar a:hover,
-.navbar a.active {
-	color: #ffc500;
+/* -------------------- BODY EDITS -------------------- */
+body {
+    background-color: #442826;
 }
 
-/* INDEX HOME PAGE - MAIN */
-.home {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	padding: 0 10%;
-}
-.home-content {
-	max-width: 650px; /* min length required for home since my name is too long */
-}
-.home-content h3 {
-	color: #ffc500;
-	line-height: 1.2;
-}
-.home-content p {
-	margin: 20px 0 40px;
-}
-
-/* HOME BUTTONS STYLING & ANIMATION */
-.home-content .btn-box {
-	display: flex;
-	justify-content: space-between;
-	width: 345px;
-	height: 50px;
-}
-.btn-box a {
-	position: relative;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 150px;
-	height: 100%;
-	background: #ffc500;
-	border: 2px solid #ffc500;
-	border-radius: 8px;
-	font-size: 19px;
-	color: #6a1b1b;
-	text-decoration: none;
-	font-weight: 600;
-	letter-spacing: 1px;
-	z-index: 1;
-	overflow: hidden;
-	transition: 0.5s;
-}
-.btn-box a:hover {
-	color: #ffc500;
-}
-.btn-box a:nth-child(2) {
-	background: transparent;
-	color: #ffc500;
-}
-.btn-box a:nth-child(2):hover {
-	color: #6a1b1b;
-}
-.btn-box a:nth-child(2)::before {
-	background: #ffc500;
-}
-.btn-box a::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	background: #6a1b1b;
-	z-index: -1;
-	transition: 0.5s;
-}
-.btn-box a:hover::before {
-	width: 100%;
-}
-
-/* CONTACT - Body content */
-.contact {
-	display: flex;
-	margin-top: 150px;
-}
-.contact-content {
-	margin: 20px auto;
-	width: 650px;
-}
-.contact-content h1 {
-	text-align: center;
-	font-size: 56px;
-	color: #ffc500;
-}
-.contact-content h3 {
-	text-align: center;
-	font-weight: 400;
-}
-.contact-content p {
-	text-align: center;
-	margin: 10px 0 0px;
-}
-.contact-form {
-	margin: 0 auto;
-	width: 100%;
-}
-.contact-form label {
-	display: inline-block;
-	width: 20%; /* This percentage can be adjusted based on your design needs */
-	text-align: left; /* Aligns the text to the right, making it closer to the input */
-	margin-right: 10px; /* Adds some space between the label and the input */
-}
-.contact-form input {
-	color: #ededed;
-	background-color: #6a1b1b;
-	border: 2px solid #ffc500;
-}
-
-.contact-form input, .contact-form textarea {
-	width: 75%;
-	margin-bottom: 10px;
-	text-align: left; /* This ensures the input text starts from the left */
-    padding-left: 5px;
-}
-/* This ensures the textarea and the submit button appear full width */
-.contact-form textarea, .contact-form input[type="submit"] {
-	width: 100%;
-	display: block; /* This ensures they take up the full width of the form and start on a new line */
-	color: #ededed;
-	background-color: #6a1b1b;
-	border: 2px solid #ffc500;
-}
-.contact-form textarea::placeholder {
-	padding: 5px;
-	color: #ededed;
-	text-align: center;
-}
-#submit {
+.page-layout {
+    height: 100vh;
+    padding: 100px 20px 20px 20px;
     text-align: center;
 }
 
-/* FOOTER */
-.footer {
-	background: transparent;
-	padding: 20px 0;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000;
+.about-content, .portfolio-content, .contact-content {
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* FOOTER SOCIALS */
+/* -------------------- HEADER STYLES -------------------- */
+.header {
+    background-color: #442826;
+    opacity: 75%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar a {
+    padding-right: 75px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-bar a:last-of-type {
+    padding: 0;
+}
+
+.nav-bar a:hover, .nav-bar a.active {
+    color: black;
+}
+
+/* -------------------- HOME STYLES -------------------- */
+#home {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+}
+
+/* -------------------- ABOUT STYLES -------------------- */
+.about {
+    background-color: #f5f5dc;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1.2;
+    gap: 30px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.about-info p {
+    flex: 1;
+}
+
+.about-info span {
+    font-size: 18px;
+    color: black;
+    width: 100%;
+}
+
+.skills-info {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill {
+    flex: 1;
+    padding: 20px;
+}
+
+.skill img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#skills-header {
+    width: 100%;
+}
+
+/* -------------------- PORTFOLIO STYLES -------------------- */
+.portfolio {
+    background-color: #f5f5dc;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.project {
+    line-height: 2;
+}
+
+.project img {
+    width: 300px;
+}
+
+/* -------------------- CONTACT STYLES -------------------- */
+.contact {
+    background-color: #f5f5dc;
+    height: 80vh;
+}
+
+.contact-info {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-container {
+    color: black;
+    border: 2px solid black;
+    line-height: 1.5;
+    padding: 20px 20px;
+}
+
+.info-container a, .info-container span {
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.info-container a {
+    padding-bottom: 20px;
+    color: #442826;
+}
+
+.info-container a:hover {
+    color: #dcae96;
+}
+
+#personal-image {
+    width: 350px;
+    background-color: #442826;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+/* -------------------- FOOTER STYLES -------------------- */
+.footer {
+    background-color: #442826;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer-socials {
 	width: 300px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
+
 .footer-socials a {
 	display: inline-flex;
 	justify-content: center;
@@ -215,8 +251,15 @@ p {
 	width: 40px;
 	height: 40px;
 	background: transparent;
-	border: 2px solid #ffc500;
-	border-radius: 20px;
-	color: #ffc500;
+	border: 2px solid #f5f5dc;
+	border-radius: 30px;
+	color: #f5f5dc;
 	text-decoration: none;
 }
+
+.footer-socials a:hover {
+    border-color: black;
+    color: black;
+}
+
+/* -------------------- BUTTON STYLES -------------------- */

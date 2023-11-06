@@ -3,46 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morgan R.</title>
+    <title>Morgan Ruiz-Demaree</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <a href="#" class="logo">Morgan.</a>
-
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="contact.html">Contact</a>
+        <nav class="nav-bar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
         </nav>
     </header>
-    <section class="home">
-        <div class="home-content">
-            <h1>Hey, I'm Morgan Ruiz-Demaree</h1>
-            <h3>Frontend Developer</h3>
-            <p>At 22, I've embarked on an exciting new path as a web developer. Passionate about teaming up with creative minds, I'm dedicated to transforming visions into digital realities. My insatiable curiosity drives me to continually refine and elevate my coding skills with every project.</p>
-            <div class="btn-box">
-                <!-- Idea for the Hire Me button: 
-                1. Hidden page that will direct them to the an alternative of the portfolio, maybe includes resume highlights? 
-                2. A hidden page that basically is just like a cover letter -->
-                <a href="#">Hire Me</a>
-                <!-- This should just redirect to the contact me page, this should have links to all socials and boxes that allow them to fill out a message (need to see if this is possible through GitHub) -->
-                <a href="#">Let's Chat</a>
-            </div>
+
+    <main class="main">
+        <!-- HOME PAGE -->
+        <div class="page-layout home" id="home">
+            <section class="home-content">
+                <h1 id="title">Hey, I'm Morgan Ruiz-Demaree.</h1>
+                <span class="title-info">I'm a software developer in Texas.</span>
+            </section>
         </div>
-    </section>
+
+        <!-- ABOUT ME PAGE -->
+        <div class="page-layout about" id="about">
+            <section class="about-content">
+                <h2>Who Am I?</h2>
+                <h4>A Little About Me</h4>
+                <div class="about-info">
+                    <p>I'm thrilled to be on this coding journey, and I can't wait to dive into the world of development. It all started with a curiosity that turned into a passion, and now, I'm excited to see where it takes me. When I'm not coding, you'll often find me behind a drum kit, learning and losing myself in the music. I'm always on the lookout for new bands and I share my home with two adorable sugar gliders, and have love for any animals. Whether it's my sugar gliders, dogs, cats, or any furry friend, I'm a true animal lover at heart.</p>
+                    <p>And speaking of passions, let's talk about coffee! I'm a bona fide coffee nerd. You can quiz me about coffee beans, brewing methods, or even ask me about my favorite brew. I take my coffee seriously, and can even tell you the region of a coffee just by sipping it. Don't hesitate to ask me for coffee recommendations — I've got plenty! In my downtime, I also play plenty of video games. I'm always on the lookout for new games to play and enjoy immersing myself in different gaming worlds. If you have any game recommendations, feel free to share them with me — I'm all ears.</p>
+                    <span>Thanks for stopping by, and I'm looking forward to connecting with you, whether it's about coding, music, animals, coffee, or gaming!</span>
+                </div>
+                <section class="skills-info">
+                    <h4 id="skills-header">My Skills</h4>
+                    <div class="skill">
+                        <img src="assets/images/placeholder.jpg" alt="#">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita maiores in dolor iure doloremque, vel aperiam nesciunt molestias eos, modi voluptatibus saepe dignissimos nihil quo quis dolorem temporibus? Enim.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/images/placeholder.jpg" alt="#">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita maiores in dolor iure doloremque, vel aperiam nesciunt molestias eos, modi voluptatibus saepe dignissimos nihil quo quis dolorem temporibus? Enim.</p>
+                    </div>
+                    <div class="skill">
+                        <img src="assets/images/placeholder.jpg" alt="#">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita maiores in dolor iure doloremque, vel aperiam nesciunt molestias eos, modi voluptatibus saepe dignissimos nihil quo quis dolorem temporibus? Enim.</p>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <!-- PORTFOLIO PAGE -->
+        <div class="page-layout portfolio" id="portfolio">
+            <section class="portfolio-content">
+                <h2>Portfolio</h2>
+                <!-- SECTIONS INTO TWO ROWS FOR READABILITY -->
+                <!-- ROW ONE -->
+                <div class="project-row">
+                    <section class="project">
+                        <h4>Project One</h4>
+                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-1"></a>
+                    </section>
+                    <section class="project">
+                        <h4>Project Two</h4>
+                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-2"></a>
+                    </section>
+                    <section class="project">
+                        <h4>Project Three</h4>
+                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-3"></a>
+                    </section>
+                </div>
+                <!-- ROW TWO -->
+                <div class="project-row">
+                    <section class="project">
+                        <h4>Project One</h4>
+                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-1"></a>
+                    </section>
+                    <section class="project">
+                        <h4>Project Two</h4>
+                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-2"></a>
+                    </section>
+                    <section class="project">
+                        <h4>Project Three</h4>
+                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-3"></a>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div class="page-layout contact" id="contact">
+            <section class="contact-content">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <img src="assets/images/me.png" alt="probably an image of me" id="personal-image">
+                    <section class="info-container">
+                        <h6>Connect With Me!</h6>
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/mruizdemaree/">https://www.linkedin.com/in/mruizdemaree/</a>
+                        <span>Twitter</span>
+                        <a href="#">link</a>
+                        <span>Check out my GitHub</span>
+                        <a href="https://github.com/mruizdem">https://github.com/mruizdem</a>
+                        <span>Or you can reach me by email!</span>
+                        <a href="mailto:mruizdemaree@gmail.com">mruizdemaree@gmail.com</a>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-socials">
-            <a href="https://www.linkedin.com/in/mruizdemaree"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.linkedin.com/in/mruizdemaree/"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/mruizdem"><i class='bx bxl-github' ></i></a>
-            <a href="https://twitter.com/MorganRuizDem"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
