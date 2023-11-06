@@ -189,7 +189,7 @@ body {
 /* -------------------- CONTACT STYLES -------------------- */
 .contact {
     background-color: #f5f5dc;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .contact-info {
