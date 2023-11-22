@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- MAIN HEADER -->
+    <header id="mainHeader" class="">
+        <!-- PAGE LINKS -->
+        <nav id="nav-bar" class="container">
+            <a href="index.html">Portfolio</a>
+            <a href="#mainHeader" class=" activeBtn">About Me</a>
+        </nav>
+        <!-- SOCIAL LINKS -->
+        <div id="socials" class="container">
+            <a href="https://twitter.com/MorganRuizDem"><i class='bx bxl-twitter'></i></a>
+            <a href="https://github.com/mruizdem"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/mruizdemaree/"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </header>
+
+    <!-- MAIN PAGE -->
+    <main id="main" class="main">
+        <!-- PAGE INFO HEADER -->
+        <section id="mainInfo" class="container">
+            <h2>A Little About Me!</h2>
+            <img src="assets/images/MorganStarbucks.jpg" alt="#">
+            <p>Hello there! Thanks for checking out my page. My name is Morgan, and I'm a drummer at heart. I've been playing since I was a kid, and nothing can beat being behind a drum set or just tapping away to a song. I'm always in the mood for new music, so please feel free to reach out with any suggestions!</p>
+            <p>I also love coffee! My journey with coffee began in the world of Starbucks. What started as a job quickly brewed into a deep-seated passion for all things coffee. I'm a huge coffee nerd, always on the hunt for that perfect blend and experimenting with various brewing techniques. There's an art to coffee that fascinates me from the roasting process to the final pour.</p>
+            <p>Technology has always been a significant part of my life, especially video games and building my own computers. The thrill of building a machine from the ground up and then seeing it run at it's full potential is incomparable. This interest naturally led me to the world of coding. I'm excited to embark on this new adventure, exploring the endless possibilities that coding offers. It's like learning a new language, one that translates my creativity and logical thinking into something tangible and impactful.</p>
+        </section>
+
+        <!-- BOTTOM SECTION: FORM -->
+        <div class="row">
+            <div id="bottomSection" class="container col-6 border border-1 border-start-0 border-bottom-0 border-end-1">
+                <form action="#" class="form">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" placeholder="Full Name">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" placeholder="Email">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message..."></textarea>
+                    <button class="submit projectBtn" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="personalInfo" class="container col-6 border border-1 border-end-0">
+                <span>Email: <a href="#">notmyemail@test.com</a></span>
+                <span>Socials: 
+                    <a href="https://twitter.com/MorganRuizDem">Twitter</a>
+                    <a href="https://www.linkedin.com/in/mruizdemaree/">LinkedIn</a>
+                    <a href="https://github.com/mruizdem">GitHub</a>
+                </span>
+                <span><a href="https://ko-fi.com/mruizdem">Buy Me A Coffee!</a></span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <span>Design by | <em>Morgan Ruiz-Demaree</em></span>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

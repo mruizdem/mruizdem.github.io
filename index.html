@@ -3,126 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morgan Ruiz-Demaree</title>
+    <title>Morgan R.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <nav class="nav-bar" id="nav-bar">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contact">CONTACT</a>
+    <!-- HOME TITLE SCREEN -->
+    <div id="homeSection" class="container">
+        <section id="homeInfo" class="container">
+            <h1 id="homeTitle">Morgan Ruiz-Demaree</h1>
+            <p>Hey! My name is Morgan and I'm a software developer in Texas. Let's chat.</p>
+            <a href="#mainHeader" id="down-arrow"><i class='bx bxs-down-arrow' ></i></a>
+        </section>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header id="mainHeader">
+        <!-- PAGE LINKS -->
+        <nav id="nav-bar" class="container">
+            <a href="#mainHeader" class=" activeBtn">Portfolio</a>
+            <a href="about.html">About Me</a>
+            <!-- <a href="#">Page 3</a> -->
         </nav>
+        <!-- SOCIAL LINKS -->
+        <div id="socials" class="container">
+            <a href="https://twitter.com/MorganRuizDem"><i class='bx bxl-twitter'></i></a>
+            <a href="https://github.com/mruizdem"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/mruizdemaree/"><i class='bx bxl-linkedin' ></i></a>
+        </div>
     </header>
 
-    <main class="main">
-        <!-- HOME PAGE -->
-        <div id="home" class="page-layout home">
-            <section class="home-content">
-                <h1 id="title">Hey, I'm Morgan Ruiz-Demaree.</h1>
-                <span>I'm a software developer in Texas.</span>
-                <a href="#about" id="down-arrow"><i class='bx bxs-down-arrow' ></i></a>
-            </section>
+    <!-- MAIN PAGE -->
+    <main id="main">
+        <!-- PAGE INFO HEADER -->
+        <section id="mainInfo" class="container">
+            <h2>Check Out My Portfolio!</h2>
+            <p>These are some early projects that I have completed and am continuing to work on! These will continue to be replaced as I develop more complex and interesting projects.</p>
+            <!-- <img src="assets/images/pic01.jpg" alt="#"> -->
+        </section>
+
+        <!-- PROJECTS -->
+        <!-- ROW ONE -->
+        <div class="row">
+            <article class="project container col border border-2 border-start-0">
+                <h3>Generation Two PokeDex</h3>
+                <a href="pokemon.html"><img src="assets/vids/TestGif.gif" alt="#"></a>
+                <p>As I learned to work with API's and CSS frameworks, I set up a Pokedex to work along side my playthrough of Pokemon HeartGold!</p>
+            </article>
+            <article class="project container col border border-2 border-end-0 border-start-0">
+                <h3>Project Num Two</h3>
+                <a href="#"><img src="assets/images/pic02.jpg" alt="#"></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, commodi.</p>
+            </article>
+        </div>
+        <!-- ROW TWO -->
+        <div class="row">
+            <article class="project container col border border-2 border-top-0 border-start-0">
+                <h3>Project Num Three</h3>
+                <a href="#"><img src="assets/images/pic02.jpg" alt="#"></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officia enim at earum sunt magnam obcaecati ea? Quam vero tempora officiis et quidem, recusandae, itaque unde cupiditate nostrum dolore odio?</p>
+            </article>
+            <article class="project container col border border-2 border-top-0 border-end-0 border-start-0">
+                <h3>Project Num Four</h3>
+                <a href="#"><img src="assets/images/pic02.jpg" alt="#"></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, cum atque at ad repellat pariatur?</p>
+            </article>
         </div>
 
-        <!-- ABOUT ME PAGE -->
-        <div id="about" class="page-layout about">
-            <section class="about-content">
-                <h2>Who Am I?</h2>
-                <h4>A Little About Me</h4>
-                <div class="about-info">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsa aspernatur est error quibusdam impedit earum assumenda, praesentium harum, omnis qui maxime dolorum distinctio, tempore natus corrupti dolore quas cupiditate?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nisi id odit exercitationem aspernatur ducimus deleniti tempore dolore, nihil dolorem tenetur provident asperiores, pariatur rerum error aliquam laborum doloribus ratione.</p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate nemo consectetur ipsa similique at non, libero doloribus tempore dolorem nobis, minima quasi a pariatur iusto vero explicabo. Ipsum, distinctio tempore?</span>
-                </div>
-                <section class="skills-info">
-                    <h4 id="skills-header">My Skills</h4>
-                    <div class="skill">
-                        <img src="assets/images/placeholder.jpg" alt="#">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita maiores in dolor iure doloremque, vel aperiam nesciunt molestias eos, modi voluptatibus saepe dignissimos nihil quo quis dolorem temporibus? Enim.</p>
-                    </div>
-                    <div class="skill">
-                        <img src="assets/images/placeholder.jpg" alt="#">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita maiores in dolor iure doloremque, vel aperiam nesciunt molestias eos, modi voluptatibus saepe dignissimos nihil quo quis dolorem temporibus? Enim.</p>
-                    </div>
-                    <div class="skill">
-                        <img src="assets/images/placeholder.jpg" alt="#">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita maiores in dolor iure doloremque, vel aperiam nesciunt molestias eos, modi voluptatibus saepe dignissimos nihil quo quis dolorem temporibus? Enim.</p>
-                    </div>
-                </section>
-            </section>
-        </div>
-
-        <!-- PORTFOLIO PAGE -->
-        <div id="portfolio" class="page-layout portfolio">
-            <section class="portfolio-content">
-                <h2>Portfolio</h2>
-                <!-- SECTIONS INTO TWO ROWS FOR READABILITY -->
-                <!-- ROW ONE -->
-                <div class="project-row">
-                    <section class="project">
-                        <h4>Project One</h4>
-                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-1" onmouseover="projectHover(this)" onmouseleave="projectHoverOff(this)"></a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sequi quasi cupiditate tempore ea et expedita, similique dicta vero quod voluptate, fugiat dolorum debitis adipisci soluta necessitatibus libero magni dolores!</p>
-                    </section>
-                    <section class="project">
-                        <h4>Project Two</h4>
-                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-2" onmouseover="projectHover(this)" onmouseleave="projectHoverOff(this)"></a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sequi quasi cupiditate tempore ea et expedita, similique dicta vero quod voluptate, fugiat dolorum debitis adipisci soluta necessitatibus libero magni dolores!</p>
-                    </section>
-                </div>
-                <!-- ROW TWO -->
-                <div class="project-row">
-                    <section class="project">
-                        <h4>Project Three</h4>
-                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-1" onmouseover="projectHover(this)" onmouseleave="projectHoverOff(this)"></a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sequi quasi cupiditate tempore ea et expedita, similique dicta vero quod voluptate, fugiat dolorum debitis adipisci soluta necessitatibus libero magni dolores!</p>
-                    </section>
-                    <section class="project">
-                        <h4>Project Four</h4>
-                        <a href="#"><img src="assets/images/placeholder.jpg" alt="project-2" onmouseover="projectHover(this)" onmouseleave="projectHoverOff(this)"></a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sequi quasi cupiditate tempore ea et expedita, similique dicta vero quod voluptate, fugiat dolorum debitis adipisci soluta necessitatibus libero magni dolores!</p>
-                    </section>
-                </div>
-            </section>
-        </div>
-
-        <!-- CONTACT PAGE -->
-        <div id="contact" class="page-layout contact">
-            <section class="contact-content">
-                <h2>Contact Me</h2>
-                <div class="contact-info">
-                    <img src="assets/images/placeholder-person.jpg" alt="probably an image of me" id="personal-image">
-                    <section class="info-container">
-                        <h6>Connect With Me!</h6>
-                        <span>LinkedIn</span>
-                        <a href="https://www.linkedin.com/in/mruizdemaree/">https://www.linkedin.com/in/mruizdemaree/</a>
-                        <span>Twitter</span>
-                        <a href="https://twitter.com/MorganRuizDem">https://twitter.com/MorganRuizDem</a>
-                        <span>Check out my GitHub</span>
-                        <a href="https://github.com/mruizdem">https://github.com/mruizdem</a>
-                        <span>Or you can reach me by email!</span>
-                        <a href="mailto:mruizdemaree@gmail.com">mruizdemaree@gmail.com</a>
-                    </section>
-                </div>
-            </section>
+        <!-- BOTTOM SECTION: FORM -->
+        <div class="row">
+            <div id="bottomSection" class="container col-6 border border-1 border-top-0 border-start-0 border-bottom-0 border-end-1">
+                <form action="#" class="form">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" placeholder="Full Name">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" placeholder="Email">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message..."></textarea>
+                    <button class="submit projectBtn" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="personalInfo" class="container col-6 border border-1 border-top-0 border-end-0">
+                <span>Email: <a href="#">notmyemail@test.com</a></span>
+                <span>Socials: 
+                    <a href="https://twitter.com/MorganRuizDem">Twitter</a>
+                    <a href="https://www.linkedin.com/in/mruizdemaree/">LinkedIn</a>
+                    <a href="https://github.com/mruizdem">GitHub</a>
+                </span>
+                <span><a href="https://ko-fi.com/mruizdem">Buy Me A Coffee!</a></span>
+            </div>
         </div>
     </main>
-
-    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-socials">
-            <a href="https://www.linkedin.com/in/mruizdemaree/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/mruizdem"><i class='bx bxl-github' ></i></a>
-            <a href="https://twitter.com/MorganRuizDem"><i class='bx bxl-twitter' ></i></a>
-        </div>
+        <span>Design by | <em>Morgan Ruiz-Demaree</em></span>
     </footer>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

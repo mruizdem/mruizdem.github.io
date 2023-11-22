@@ -1,312 +1,348 @@
-/* -------------------- COLORS -------------------- */
-/* 
-#f5f5dc - beige
-#dcae96 - light red
-#90645a - maroonish
-#442826 - dark
-*/
-
-/* -------------------- CSS RESET -------------------- */
+/* TYPOGRAPHY */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Serif', serif;
-    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* -------------------- TYPOGRAPHY -------------------- */
-#title {
-    font-size: 60px;
-    color: white;
-}
-
-h2 {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 50px;
-}
-
-h4 {
-    font-size: 24px;
-}
-
-h6 {
-    font-size: 30px;
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
     margin-bottom: 20px;
 }
 
-p {
-    text-align: center;
-    font-size: 18px;
-    text-indent: 30px;
+/* RESETS */
+
+:root {
+    --primary: white;
+    --primaryOpacity: rgba(255, 255, 255, 0.3); 
+    --secondary: black;
+    --secondaryOpacity: rgba(0, 0, 0, 0.5);
+    --tertiary: gray;
+
+    /* Colors for pokemon typing */
+    --normal:       #aaaa99;
+    --fire:         #FF4422;
+    --water:        #3399FF;
+    --electric:     #FFCC33;
+    --grass:        #77CC55;
+    --ice:          #66CCFF;
+    --fighting:     #BB5544;
+    --poison:       #AA5599;
+    --ground:       #DDBB55;
+    --flying:       #8899FF;
+    --psychic:      #FF5599;
+    --bug:          #AABB22;
+    --rock:         #BBAA66;
+    --ghost:        #6666BB;
+    --dragon:       #7766EE;
+    --dark:         #775544;
+    --steel:        #AAAABB;
+    --fairy:        #EE99EE;
 }
 
-span {
-    font-size: 24px;
-    color: white;
-}
-
-/* -------------------- BODY EDITS -------------------- */
 body {
-    background-color: #442826;
+    background-image: url('assets/images/TestImage.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.page-layout {
-    min-height: 100vh;
-    padding: 100px 20px 20px 20px;
-    text-align: center;
-}
-
-.about-content, .portfolio-content, .contact-content {
-    width: 80%;
+#mainHeader, #main {
+    width: 90%;
     margin: 0 auto;
 }
 
-/* -------------------- HEADER STYLES -------------------- */
-.header {
-    background-color: #442826;
-    opacity: 75%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 60px;
-    width: 100%;
+.row {
+    padding: 0 15px;
+}
+
+#homeSection, #homeInfo, #mainHeader, #nav-bar, #socials, #nav-bar a, #socials a, #personalInfo span, #pokeHeader {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.nav-bar a {
-    padding-right: 75px;
-    color: white;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.nav-bar a:last-of-type {
-    padding: 0;
-}
-
-.nav-bar a:hover, .nav-bar a.active {
-    color: black;
 }
 
 /* -------------------- HOME STYLES -------------------- */
-.home {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#homeSection {
+    background: transparent;
+    height: 93vh;
+    line-height: 1.5;
 }
-.home-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#homeInfo {
     flex-direction: column;
-    line-height: 2;
-}
-
-#down-arrow {
-    font-size: 24px;
-    color: white;
-}
-
-/* -------------------- ABOUT STYLES -------------------- */
-.about {
-    background-color: #f5f5dc;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.about-info {
-    display: flex;
-    justify-content: space-evenly;
-    line-height: 1.2;
-    gap: 30px;
-    margin-bottom: 80px;
-    flex-wrap: wrap;
-}
-
-.about-info p {
-    flex: 1;
-}
-
-.about-info span {
-    font-size: 18px;
-    color: black;
-    width: 100%;
-}
-
-.skills-info {
+    width: 70%;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    color: var(--primary);
+}
+
+#homeInfo a, #pokeHeader a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* -------------------- MAIN HEADER STYLES -------------------- */
+#mainHeader {
+    height: 7vh;
+    background: rgba(224, 219, 219, 0.3) no-repeat center center;
+}
+
+#nav-bar {
+    flex: 2;
+    height: 100%;
+    background-color: transparent;
+    padding: 0;
+}
+
+#nav-bar a {
+    color: var(--primary);
+    height: 100%;
+    background: transparent;
+    flex: 1;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#nav-bar a.activeBtn {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+#nav-bar a:hover {
+    background-color: var(--primaryOpacity);
+}
+
+#socials {
+    flex: .8;
     justify-content: space-evenly;
+}
+
+#socials a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary);
+}
+
+#socials a:hover {
+    color: var(--primaryOpacity);
+    border-color: var(--primaryOpacity);
+}
+
+/* -------------------- MAIN STYLES -------------------- */
+#main {
+    background-color: var(--primary);
+}
+
+#mainInfo {
+    padding: 7%;
+    text-align: center;
+}
+
+#mainInfo p {
+    margin-top: 20px;
+}
+
+#mainInfo img {
+    max-width: 80%;
+    max-height: 425px;
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+    margin-top: 10px;
+}
+
+/* -------------------- PROJECT STYLES -------------------- */
+.project {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 30px 20px;
+    text-align: center;
     gap: 20px;
 }
 
-.skill {
-    flex: 1;
-    padding: 20px;
+.project a img {
+    width: 100%;
+    border-radius: 20px;
 }
 
-.skill img {
-    width: 200px;
+.project a:hover {
+    scale: 1.1;
+    box-shadow: 3px 3px var(--secondaryOpacity);
+    border-radius: 20px;
+}
+
+.projectBtn {
+    border: 2px solid black;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+/* -------------------- BOTTOM SECTION STYLES -------------------- */
+/* FORM STYLES */
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form textarea, .form input {
+    padding: 5px 10px;
     margin-bottom: 20px;
 }
 
-#skills-header {
-    width: 100%;
+.form textarea::placeholder, .form input::placeholder {
+    font-style: italic;
 }
 
-/* -------------------- PORTFOLIO STYLES -------------------- */
-.portfolio {
-    background-color: #f5f5dc;
-}
-
-.portfolio-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.project-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-    gap: 200px;
-}
-
-.project {
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-}
-
-.project img {
-    width: 300px;
-    border-radius: 20px;
-}
-
-/* -------------------- PORTFOLIO HOVER -------------------- */
-.active-proj {
-    border-radius: 20px;
-    scale: 1.1;
-    box-shadow: 5px 5px black;
-    transition: .1s;
-}
-
-/* -------------------- CONTACT STYLES -------------------- */
-.contact {
-    background-color: #f5f5dc;
-    min-height: 80vh;
-}
-
-.contact-info {
-    padding-top: 50px;
+/* PERSONAL STYLES */
+#personalInfo {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#personalInfo span {
     gap: 20px;
 }
 
-.info-container {
-    color: black;
-    border: 2px solid black;
-    line-height: 1.5;
-    padding: 20px 20px;
-    margin: 20px;
-}
-
-.info-container a, .info-container span {
-    font-size: 20px;
+#personalInfo a {
+    text-decoration: none;
     color: black;
     display: block;
 }
 
-.info-container a {
-    padding-bottom: 20px;
-    color: #442826;
-}
-
-.info-container a:hover {
-    color: #dcae96;
-}
-
-#personal-image {
-    width: 350px;
-    background-color: #442826;
-    border: 3px solid black;
-    border-radius: 50px;
+#personalInfo a:hover {
+    color: var(--secondaryOpacity);
 }
 
 /* -------------------- FOOTER STYLES -------------------- */
 .footer {
-    background-color: #442826;
     height: 10vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--primary);
 }
 
-.footer-socials {
-	width: 300px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
+/* -------------------- POKEMON STYLES -------------------- */
+#pokeHeader {
+    height: 7vh;
+    padding-top: 40px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.footer-socials a {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 30px;
-	height: 30px;
-	background: transparent;
-	border: 2px solid #f5f5dc;
-	border-radius: 30px;
-	color: #f5f5dc;
-	text-decoration: none;
+.generationSelection {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
-.footer-socials a:hover {
-    border-color: black;
-    color: black;
+.pokeBtn, .returnBtn {
+    padding: 5px 50px; 
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    background-color: var(--primaryOpacity);
+    color: var(--primary);
 }
 
-/* -------------------- MOBILE EDITS -------------------- */
-@media screen and (max-width: 768px) {
-    /* CSS adjustments for smaller screens */
-    .page-layout {
-        padding: 20px;
-    }
+.pokeBtn:hover, .returnBtn:hover, .poke:hover {
+    scale: 1.1;
+    box-shadow: 2px 4px var(--secondaryOpacity);
+}
 
-    .contact {
-        min-height: auto;
-    }
+#mainContainer {
+    padding: 40px;
+}
 
-    h1 {
-        font-size: 36px;
-    }
+.poke {
+    color: var(--primary);
+    background-color: var(--primaryOpacity);
+    box-shadow: 2px 4px var(--secondaryOpacity);
+}
 
-    p {
+.pokeType {
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+.multiType {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* COLORS */
+.normal-color {
+    background-color: var(--normal);
+}
+.fire-color {
+    background-color: var(--fire);
+}
+.water-color {
+    background-color: var(--water);
+}
+.electric-color {
+    background-color: var(--electric);
+}
+.grass-color {
+    background-color: var(--grass);
+}
+.ice-color {
+    background-color: var(--ice);
+}
+.fighting-color {
+    background-color: var(--fighting);
+}
+.poison-color {
+    background-color: var(--poison);
+}
+.ground-color {
+    background-color: var(--ground);
+}
+.flying-color {
+    background-color: var(--flying);
+}
+.psychic-color {
+    background-color: var(--psychic);
+}
+.bug-color {
+    background-color: var(--bug);
+}
+.rock-color {
+    background-color: var(--rock);
+}
+.ghost-color {
+    background-color: var(--ghost);
+}
+.dragon-color {
+    background-color: var(--dragon);
+}
+.dark-color {
+    background-color: var(--dark);
+}
+.steel-color {
+    background-color: var(--steel);
+}
+.fairy-color {
+    background-color: var(--fairy);
+}
+
+/* -------------------- MOBILE STYLES -------------------- */
+@media only screen and (max-width: 786px) {
+    * {
         font-size: 16px;
-        text-indent: 0;
     }
 
-    .nav-bar a {
-        padding-right: 20px;
-    }
-
-    img {
-        max-width: 100%;
+    #personalInfo span {
+        flex-wrap: wrap;
     }
 }
