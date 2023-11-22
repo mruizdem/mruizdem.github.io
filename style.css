@@ -345,4 +345,8 @@ body {
     #personalInfo span {
         flex-wrap: wrap;
     }
+
+    #homeSection {
+        height: 86vh;
+    }
 }
